@@ -31,6 +31,7 @@ class Form(QDialog):
     # Greets the user
     def write_in_file(self):
         #print("Hello {} {}".format(self.edit_first_name.text(),self.edit_last_name.text()))
+        # ne pas oublier de creer un txt !
         f = open(r"C:\Users\hdafa\Documents\Python Scripts\data_5055.txt","a")
         ready1 = ''.join(self.edit_first_name.text().split()).strip()
         ready2 = ''.join(self.edit_last_name.text().split()).strip()
